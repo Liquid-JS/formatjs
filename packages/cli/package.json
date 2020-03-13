@@ -58,5 +58,8 @@
   },
   "bugs": {
     "url": "https://github.com/formatjs/formatjs/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

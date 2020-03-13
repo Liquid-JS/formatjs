@@ -17,8 +17,7 @@
     "karma:ci": "karma start karma.conf-ci.js",
     "karma:local": "karma start karma.conf.js",
     "lint": "eslint 'packages/*/src/**/*.ts?(x)' --fix",
-    "postversion": "npm run prettier",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build:packages",
     "prettier": "prettier --write 'packages/*/{test,tests,src,scripts}/**/*.ts' 'packages/babel-plugin-react-intl/test/**/*.js' '{src,scripts,test,tests}/**/*.js' '**/*.md'",
     "prettier:check": "prettier --check 'packages/*/{test,tests,src,scripts}/**/*.ts' 'packages/babel-plugin-react-intl/test/**/*.js' '{src,scripts,test,tests}/**/*.js' '**/*.md'",
     "test": "lerna run lint && npm run prettier:check && cross-env TS_NODE_PROJECT=tsconfig.cjs.json lerna run test"
@@ -140,8 +139,8 @@
     "node": ">= 8.x",
     "npm": "6.x"
   },
-  "pre-commit": [
-    "prettier"
-  ],
-  "author": "Seth Bertalotto <sbertal@verizonmedia.com>"
+  "author": "Seth Bertalotto <sbertal@verizonmedia.com>",
+  "publishConfig": {
+    "access": "public"
+  }
 }

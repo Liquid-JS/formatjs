@@ -40,5 +40,8 @@
   "gitHead": "8b0baec8eda5002715cf893274fe59782fc2d371",
   "devDependencies": {
     "json-schema-to-typescript": "^7.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
