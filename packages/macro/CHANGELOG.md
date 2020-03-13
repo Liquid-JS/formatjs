@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.7 (2020-03-13)
+
+
+### Bug Fixes
+
+* remove redundant checks, k? ([9b0f7a3](https://github.com/formatjs/formatjs/commit/9b0f7a3adea8af97c969b29efd2c6294e2edeb2c))
+* **@formatjs/cli:** remove Node engines restrictions ([e55efe9](https://github.com/formatjs/formatjs/commit/e55efe90edc8859b89978b2b8bd99c41c17c291f))
+* **@formatjs/intl-utils:** use api-extractor to combine d.ts ([a4b16b5](https://github.com/formatjs/formatjs/commit/a4b16b54f7cee23673701d285fffc6401536e926))
+* **@formatjs/macro:** add types decl in package.json ([1dadc31](https://github.com/formatjs/formatjs/commit/1dadc31e9fed8c551971cd6565410b3f900da567))
+* **@formatjs/macro:** fix tsconfig build to output the correct dir ([825d2cb](https://github.com/formatjs/formatjs/commit/825d2cb035b76276be259fbff08e0bf456203207))
+* **@formatjs/macro:** Improve type inference of defineMessages ([#289](https://github.com/formatjs/formatjs/issues/289)) ([973218c](https://github.com/formatjs/formatjs/commit/973218c24b4c697d00fabab197a4177f4b356e71))
+
+
+### Features
+
+* **eslint-plugin-formatjs:** Add support for FormattedMessage ([2df544e](https://github.com/formatjs/formatjs/commit/2df544e6b56d314460204f3f6f11003b57eda47e))
+
+
+
+
+
+
 ## [0.2.6](https://github.com/formatjs/formatjs/compare/@f-fjs/macro@0.2.5...@f-fjs/macro@0.2.6) (2019-11-26)
 
 **Note:** Version bump only for package @f-fjs/macro

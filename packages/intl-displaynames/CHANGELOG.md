@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.2 (2020-03-13)
+
+
+### Bug Fixes
+
+* remove redundant checks, k? ([9b0f7a3](https://github.com/formatjs/formatjs/commit/9b0f7a3adea8af97c969b29efd2c6294e2edeb2c))
+* **@formatjs/intl-displaynames:** minify locale data JS in dist folder ([89a96a3](https://github.com/formatjs/formatjs/commit/89a96a359f095d462bc00a380e3b2e9984bb00dc))
+
+
+### Features
+
+* **@formatjs/intl-displaynames:** include a polyfill-locales.js build that has all locale data ([#525](https://github.com/formatjs/formatjs/issues/525)) ([c260e93](https://github.com/formatjs/formatjs/commit/c260e93fd7f19c56dd1ee318731d6c1cb251539f))
+* **@formatjs/intl-displaynames:** initial commit ([#469](https://github.com/formatjs/formatjs/issues/469)) ([137b994](https://github.com/formatjs/formatjs/commit/137b994846526b02de80b024c860b2771868f236))
+* **@formatjs/intl-displaynames:** update README ([c365b85](https://github.com/formatjs/formatjs/commit/c365b85613820ce0e73326c251047a77ecf9c625))
+
+
+
+
+
+
 ## [1.2.1](https://github.com/formatjs/formatjs/compare/@f-fjs/intl-displaynames@1.2.0...@f-fjs/intl-displaynames@1.2.1) (2020-03-01)
 
 

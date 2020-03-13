@@ -3,6 +3,136 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 8.2.2 (2020-03-13)
+
+
+### Bug Fixes
+
+* remove redundant checks, k? ([9b0f7a3](https://github.com/formatjs/formatjs/commit/9b0f7a3adea8af97c969b29efd2c6294e2edeb2c))
+* **@formatjs/intl-pluralrules:** rm side effects array due to build complication ([f22e552](https://github.com/formatjs/formatjs/commit/f22e552b7a686a76b366a97da081ebf16d5aadeb))
+* **eslint-plugin-format:** fix eslint-plugin-formatjs type error ([b647552](https://github.com/formatjs/formatjs/commit/b6475523bf816e2ac3be6c03d0b565fccb2b5c29))
+* **intl-messageformat:** export Error obj ([614debb](https://github.com/formatjs/formatjs/commit/614debb80f654966bc3ba832d6e5603be88da3d9))
+* **intl-messageformat:** filter out XML a bit more aggressively ([36af40e](https://github.com/formatjs/formatjs/commit/36af40e9fbf5b9be8168fb29ac0b23c6b4703d3f)), closes [#148](https://github.com/formatjs/formatjs/issues/148)
+* **intl-messageformat:** fix [#36](https://github.com/formatjs/formatjs/issues/36) and config merging ([#40](https://github.com/formatjs/formatjs/issues/40)) ([4a9969f](https://github.com/formatjs/formatjs/commit/4a9969f864f01897357e372dbcb9223221d4b218))
+* **intl-messageformat:** Fix case-sensitive tag ([69b6eae](https://github.com/formatjs/formatjs/commit/69b6eae7034f03b0c1a6fc9575d1e4921236c20a))
+* **intl-messageformat:** fix chrome v77 issue where NumberFormat.supportedLocalesOf(cy) broke ([4b1605c](https://github.com/formatjs/formatjs/commit/4b1605c51c4973d080a1c4ce9b0179a0451c3be6))
+* **intl-messageformat:** fix empty value in formatting ([9f820ea](https://github.com/formatjs/formatjs/commit/9f820ea9c70200be54910136d71549e4f777a7cb)), closes [#156](https://github.com/formatjs/formatjs/issues/156)
+* **intl-messageformat:** fix formatHTMLMessage @ regex ([d1b7c8c](https://github.com/formatjs/formatjs/commit/d1b7c8c14a0b90f8d059a8dc3e12ce7976192975)), closes [#217](https://github.com/formatjs/formatjs/issues/217)
+* **intl-messageformat:** fix formatXMLMessage w/o tag ([8d3bfcd](https://github.com/formatjs/formatjs/commit/8d3bfcde8fe4fbcb61e00acdbed9e26849d819b6))
+* **intl-messageformat:** fix regex, fix [#130](https://github.com/formatjs/formatjs/issues/130) ([f597630](https://github.com/formatjs/formatjs/commit/f5976307d6491c8988a39d668d7f0ca7d9ba742d))
+* **intl-messageformat:** handle closing tag nested inside regular tag ([08c970a](https://github.com/formatjs/formatjs/commit/08c970a8ca9587f86f3726adb974af9e65073721))
+* **intl-messageformat:** handle formatXMLMessage better ([c03ecf8](https://github.com/formatjs/formatjs/commit/c03ecf859c77596af62c81913a6a70160e2557c8))
+* **intl-messageformat:** handle nested # in plural correctly, fix [#202](https://github.com/formatjs/formatjs/issues/202) ([22121b2](https://github.com/formatjs/formatjs/commit/22121b210b566ad3dd509e4cbf47d3c245742928))
+* **intl-messageformat:** Include Date in PrimitiveType ([1feca57](https://github.com/formatjs/formatjs/commit/1feca5745ef44831b4f1b70fd627fcb9d6f30206)), closes [#127](https://github.com/formatjs/formatjs/issues/127)
+* **intl-messageformat:** pass raw locales down to individual formatters ([3a74c2e](https://github.com/formatjs/formatjs/commit/3a74c2e7c6592de3a4f5ca182c5846fe095abe55)), closes [#255](https://github.com/formatjs/formatjs/issues/255)
+* **intl-messageformat:** remove re-export for parseDateTimeSkeleton ([8611aa4](https://github.com/formatjs/formatjs/commit/8611aa4f950ee1d42ea5e631a6fc8b50bae0383a))
+* **intl-messageformat:** use api-extractor to combine type definitions ([6c6af9d](https://github.com/formatjs/formatjs/commit/6c6af9d837d13938fa647cbbbaf2f417935908fd))
+* **intl-messageformat-parser:** allow negative in plural rule, fixes [#146](https://github.com/formatjs/formatjs/issues/146) ([50c7710](https://github.com/formatjs/formatjs/commit/50c77108700ae564a9677d88c4a7fa2460895be1))
+* **intl-messageformat-parser:** throw when there are duplicates in select/plural, fix [#168](https://github.com/formatjs/formatjs/issues/168) ([0c3a0e0](https://github.com/formatjs/formatjs/commit/0c3a0e0581775588e7ab0a941d64ec266c4b7005))
+* **lint:** fix lint config and rerun ([041eb99](https://github.com/formatjs/formatjs/commit/041eb99706164048b5b8ce7079955897ce27ed70))
+* generate .mjs instead of lib ([0c34ee4](https://github.com/formatjs/formatjs/commit/0c34ee46f87459853ceef3a92309e77a5dd4b82c))
+* generate lib instead of mjs ([05e63b3](https://github.com/formatjs/formatjs/commit/05e63b3aa2544c961087415b44ad6ba1572a659c))
+* **intl-messageformat-parser:** argStyleText can contain syntax characters and quoted string now ([#136](https://github.com/formatjs/formatjs/issues/136)) ([b39ea08](https://github.com/formatjs/formatjs/commit/b39ea0871bcf9d1f6ff002f5450e952bc50897cc)), closes [#135](https://github.com/formatjs/formatjs/issues/135)
+
+
+### Features
+
+* **@formatjs/cli:** A CLI for formatjs ([#234](https://github.com/formatjs/formatjs/issues/234)) ([1f57a0b](https://github.com/formatjs/formatjs/commit/1f57a0b0921e0228cf3fd4eff756b0cd17e28fb5))
+* **eslint-plugin-formatjs:** add supported-datetime-skeleton rules ([c121a9a](https://github.com/formatjs/formatjs/commit/c121a9a9a52f21fbe1fdfc70e31c0275efbd0f8d))
+* **intl-format-cache:** fix TS definition ([71ae9eb](https://github.com/formatjs/formatjs/commit/71ae9eb7069ba297fcc52b852ce30a5cbe768e38))
+* **intl-messageformat:** Add `formatToParts` ([0680f58](https://github.com/formatjs/formatjs/commit/0680f58beb830fed62b589aad268b4ec205c6e2f))
+* **intl-messageformat:** Add `getAst` method ([3d6c289](https://github.com/formatjs/formatjs/commit/3d6c28904125f74c6e4c15d45eb53ebc1499caca))
+* **intl-messageformat:** Add error type for better debugging ([6200573](https://github.com/formatjs/formatjs/commit/6200573c9f88b23f157bede7305fcc5da64b842b))
+* **intl-messageformat:** add limited support for date time skeleton ([07795b9](https://github.com/formatjs/formatjs/commit/07795b9e5e0116ffaf5f410c4e1c1a375f86ba8a))
+* **intl-messageformat:** Add xml formatting ([#124](https://github.com/formatjs/formatjs/issues/124)) ([72cdafc](https://github.com/formatjs/formatjs/commit/72cdafcd263534eb529dadfc44188431cb88d445))
+* **intl-messageformat:** allow mixed placeholder & XML together… ([#126](https://github.com/formatjs/formatjs/issues/126)) ([4a624c0](https://github.com/formatjs/formatjs/commit/4a624c06383724688c7168fe1fffbaeeb2aa72e5))
+* **intl-messageformat:** allow passing in formatters ([#107](https://github.com/formatjs/formatjs/issues/107)) ([3605693](https://github.com/formatjs/formatjs/commit/3605693e3ddbad4c964578222945f82f5dfe80e2))
+* **intl-messageformat:** allow passing in object to formatXMLMessage ([ce05b8a](https://github.com/formatjs/formatjs/commit/ce05b8a99d006d4296f450c5bdc56524e0572a9b))
+* **intl-messageformat:** combine formatHTMLMessage into format ([d59fbf1](https://github.com/formatjs/formatjs/commit/d59fbf1a4a017a3a023254cb9947575eef9cf803))
+* **intl-messageformat:** export core entry point ([ca7eeae](https://github.com/formatjs/formatjs/commit/ca7eeaea7a63b9431625be7aa82da95d2e38e3bb))
+* **intl-messageformat:** export Part types ([450c495](https://github.com/formatjs/formatjs/commit/450c495d53a00defab28ffc36e23cc8a997b2880))
+* **intl-messageformat:** Integrate parser's number skeleton ([c4ec029](https://github.com/formatjs/formatjs/commit/c4ec029322de34477997531ae8e9bb937cb0d52d))
+* **intl-messageformat:** mark the package as side-effects free ([a1a08ae](https://github.com/formatjs/formatjs/commit/a1a08aebc6abe4aac42632814e34145e59327bf1))
+* **intl-messageformat:** rm bundled intl-pluralrules ([a8526c3](https://github.com/formatjs/formatjs/commit/a8526c3d5697911790d3c08bfb513ec9de217c2c))
+* **intl-messageformat:** rm core bundle for now ([5311ac2](https://github.com/formatjs/formatjs/commit/5311ac2461ff0df74f72a2be006660476a3dfb0d))
+* **intl-messageformat:** rm rolluped dist ([a126939](https://github.com/formatjs/formatjs/commit/a1269390f42cd2a3a64b33618bb2a79f0362d538))
+* **intl-messageformat:** support nested tag, fix [#176](https://github.com/formatjs/formatjs/issues/176) ([a857239](https://github.com/formatjs/formatjs/commit/a857239e0212bc6dfe0510a37da2a6c5dccddafc))
+* **intl-messageformat:** switch to text/html to parse HTML message ([f1d952f](https://github.com/formatjs/formatjs/commit/f1d952f09553a4b5543706871afaa266c9afaf60)), closes [#152](https://github.com/formatjs/formatjs/issues/152) [#148](https://github.com/formatjs/formatjs/issues/148)
+* **intl-messageformat:** throw FormatError if self-closing tag is used ([#166](https://github.com/formatjs/formatjs/issues/166)) ([3e0934d](https://github.com/formatjs/formatjs/commit/3e0934da85546253bb10c949f7010d70d99f52da))
+* **intl-messageformat:** throw FormatError when trying to format plural but Intl.PluralRules is not available ([6294570](https://github.com/formatjs/formatjs/commit/62945706fe86de730dc114f14020263b594a7e05))
+* **intl-messageformat:** use the new pound element AST node in plural argument ([9519103](https://github.com/formatjs/formatjs/commit/95191035397901ccc72564be57de3fa77ef9af96))
+* **intl-messageformat-parser:** add parser for number skeleton and date skeleton ([#131](https://github.com/formatjs/formatjs/issues/131)) ([dbe6799](https://github.com/formatjs/formatjs/commit/dbe6799f6afc43a122a8ba512ef4ffa45ef67b5e))
+* **intl-messageformat-parser:** add printer to print AST to string ([ec0eaa2](https://github.com/formatjs/formatjs/commit/ec0eaa2370ff06db573483d5ee408108d67c5d1f))
+* **intl-messageformat-parser:** Allow - in embedded HTML tag ([43aa6a7](https://github.com/formatjs/formatjs/commit/43aa6a727ab6fd5eb3fb4d8c4035039a2c27b6c5)), closes [#545](https://github.com/formatjs/formatjs/issues/545)
+* **intl-messageformat-parser:** revamped quote rule ([#134](https://github.com/formatjs/formatjs/issues/134)) ([5661177](https://github.com/formatjs/formatjs/commit/566117723142f7353af80602c2f47830954b877e))
+* **intl-messageformat-parser:** Rewrite grammar ([#112](https://github.com/formatjs/formatjs/issues/112)) ([093de35](https://github.com/formatjs/formatjs/commit/093de3564852bf01c0a9b95d658aaf6d613baf53))
+* **intl-relativetimeformat:** make intl-relativetimeformat test262-compliant ([#95](https://github.com/formatjs/formatjs/issues/95)) ([91669a3](https://github.com/formatjs/formatjs/commit/91669a3f75421c95601d010136507b6314e089ca))
+* **intl-utils:** Add intl-utils ([#98](https://github.com/formatjs/formatjs/issues/98)) ([2329c57](https://github.com/formatjs/formatjs/commit/2329c5707d4c42162ac0b20ef92b0b0aebc1173b))
+* add package intl-relativetimeformat ([#51](https://github.com/formatjs/formatjs/issues/51)) ([48c0f43](https://github.com/formatjs/formatjs/commit/48c0f43cf3231a8c8ba997c9e1083b6714cd60ea))
+
+
+### BREAKING CHANGES
+
+* **intl-messageformat:** We've modified the way we parse and format embedded
+XML/HTML as follow:
+
+1. `formatHTMLMessage` has been combined with `format`
+2. All tags specified must have corresponding values and will throw
+error if it's missing, e.g: `new IntlMessageFormat("a
+<b>strong</b>").format({ b: (...chunks) => <strong>chunks</strong> })`
+3. Self-closing tags are treated as string literal by default. We don't
+allow formatting self-closing tags because we already use ICU
+`{placeholder}` syntax for that.
+4. XML/HTML tags are escaped using apostrophe just like other ICU
+constructs.
+5. Remove dependency on DOMParser and restrictions on void element like
+`<link>`. This effectively means you don't need to polyfill DOMParser in
+Node anymore
+
+fix(intl-messageformat-parser): fix escaping for XML tag
+* **intl-messageformat:** Rename `formatXMLMessage` to `formatHTMLMessage`
+* **intl-messageformat-parser:** This changes how we escape chars in messages, instead of `\` we now use apostrophe which is more aligned with ICU4J & ICU4C
+* **intl-messageformat-parser:** This completely changes the AST produced by the parser
+
+Before:
+```
+complex_msg AST length 12567
+normal_msg AST length 2638
+simple_msg AST length 567
+string_msg AST length 288
+complex_msg x 3,405 ops/sec ±5.44% (81 runs sampled)
+normal_msg x 27,513 ops/sec ±2.14% (87 runs sampled)
+simple_msg x 113,043 ops/sec ±1.20% (89 runs sampled)
+string_msg x 147,838 ops/sec ±0.78% (90 runs sampled)
+```
+
+After:
+```
+complex_msg AST length 2053
+normal_msg AST length 410
+simple_msg AST length 79
+string_msg AST length 36
+complex_msg x 3,926 ops/sec ±2.37% (90 runs sampled)
+normal_msg x 27,641 ops/sec ±3.93% (86 runs sampled)
+simple_msg x 100,764 ops/sec ±5.35% (79 runs sampled)
+string_msg x 120,362 ops/sec ±7.11% (74 runs sampled)
+```
+
+* feat: normalize hashtag token in plural
+
+* feat(intl-messageformat): adapt to new AST
+
+* feat(babel-plugin-react-intl): adapt to new AST
+* **intl-messageformat:** Change dist files packaged. Entry point should stay the
+same though.
+* **intl-messageformat:** We no longer include intl-pluralrules in our main index
+file. Consumer should polyfill accordingly.
+
+
+
+
+
+
 ## [8.2.1](https://github.com/formatjs/formatjs/compare/@f-fjs/intl-messageformat@8.2.0...@f-fjs/intl-messageformat@8.2.1) (2020-03-05)
 
 

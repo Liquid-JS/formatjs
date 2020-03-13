@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 10.1.2 (2020-03-13)
+
+
+### Bug Fixes
+
+* remove redundant checks, k? ([9b0f7a3](https://github.com/formatjs/formatjs/commit/9b0f7a3adea8af97c969b29efd2c6294e2edeb2c))
+
+
+
+
+
+
 ## [10.1.1](https://github.com/formatjs/formatjs/compare/@f-fjs/extract-cldr-data@10.1.0...@f-fjs/extract-cldr-data@10.1.1) (2020-01-27)
 
 **Note:** Version bump only for package @f-fjs/extract-cldr-data

@@ -1,6 +1,6 @@
 {
   "name": "@f-fjs/eslint-plugin-formatjs",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "ESLint plugin for formatjs",
   "main": "dist/index.js",
   "files": [
@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/formatjs/formatjs#readme",
   "dependencies": {
+    "@f-fjs/intl-messageformat-parser": "^4.1.1",
     "@types/emoji-regex": "^8.0.0",
-    "emoji-regex": "^8.0.0",
-    "@f-fjs/intl-messageformat-parser": "^4.1.0"
+    "emoji-regex": "^8.0.0"
   },
   "peerDependencies": {
     "eslint": "^6.0.0"

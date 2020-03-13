@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.12 (2020-03-13)
+
+
+### Bug Fixes
+
+* remove redundant checks, k? ([9b0f7a3](https://github.com/formatjs/formatjs/commit/9b0f7a3adea8af97c969b29efd2c6294e2edeb2c))
+* **@formatjs/ts-transformer:** fix AST node manipulation ([1c9850e](https://github.com/formatjs/formatjs/commit/1c9850e4f21ad96c5096dafbf12081b3c6efd5c1))
+* **@formatjs/ts-transformer:** fix overrideIdFn string case ([ad87c54](https://github.com/formatjs/formatjs/commit/ad87c5414601ba8d9f662c1c6d88f7ad2fb54031))
+* **@formatjs/ts-transformer:** fix quote issue ([a9edba2](https://github.com/formatjs/formatjs/commit/a9edba2182ee0ffa6e6c6d482e6dcd9882eba9c0))
+* **@formatjs/ts-transformer:** handle case where we dont import hooks ([6afb5af](https://github.com/formatjs/formatjs/commit/6afb5af6ca1246327d36d06c4930dec21f8b0421))
+* **@formatjs/ts-transformer:** handle props.intl.formatMessage case ([afaa03d](https://github.com/formatjs/formatjs/commit/afaa03d3104145523c11ebe3ba85f92e560ee8a7))
+* **@formatjs/ts-transformer:** preserve multi arguments in formatMessage call ([3404c12](https://github.com/formatjs/formatjs/commit/3404c12aacc2bd75db8fd9a2213b0ef7c7ae95e7))
+* **@formatjs/ts-transformer:** use .text instead of .getText ([961a680](https://github.com/formatjs/formatjs/commit/961a680e687506db1fb81b682ef773fd6c538258))
+* **intl-messageformat:** pass raw locales down to individual formatters ([3a74c2e](https://github.com/formatjs/formatjs/commit/3a74c2e7c6592de3a4f5ca182c5846fe095abe55)), closes [#255](https://github.com/formatjs/formatjs/issues/255)
+* **lint:** fix lint config and rerun ([041eb99](https://github.com/formatjs/formatjs/commit/041eb99706164048b5b8ce7079955897ce27ed70))
+
+
+
+
+
+
 ## [1.0.11](https://github.com/formatjs/formatjs/compare/@f-fjs/ts-transformer@1.0.10...@f-fjs/ts-transformer@1.0.11) (2019-11-26)
 
 
