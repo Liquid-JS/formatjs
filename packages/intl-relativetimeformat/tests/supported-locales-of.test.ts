@@ -1,4 +1,4 @@
-import '@formatjs/intl-pluralrules/polyfill-locales';
+import '@f-fjs/intl-pluralrules/polyfill-locales';
 import '../src/polyfill';
 import '../polyfill';
 import '../dist/locale-data/zh';

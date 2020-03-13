@@ -1,4 +1,4 @@
-# babel-plugin-react-intl
+# @f-fjs/babel-plugin-react-intl
 
 Extracts string messages for translation from modules that use [React Intl][].
 
@@ -17,7 +17,7 @@ This Babel plugin works with React Intl v2.x
 ## Installation
 
 ```sh
-$ npm install babel-plugin-react-intl
+$ npm install @f-fjs/babel-plugin-react-intl
 ```
 
 ## Usage

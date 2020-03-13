@@ -10,7 +10,7 @@ export default [
     input: './lib/index.js',
     output: {
       sourcemap: true,
-      file: 'dist/umd/intl-messageformat-parser.js',
+      file: 'dist/umd/@f-fjs/intl-messageformat-parser.js',
       format: 'umd',
       exports: 'named',
       name: 'IntlMessageFormatParser'
@@ -21,7 +21,7 @@ export default [
     input: './lib/index.js',
     output: {
       sourcemap: true,
-      file: 'dist/umd/intl-messageformat-parser.min.js',
+      file: 'dist/umd/@f-fjs/intl-messageformat-parser.min.js',
       format: 'umd',
       exports: 'named',
       name: 'IntlMessageFormatParser'

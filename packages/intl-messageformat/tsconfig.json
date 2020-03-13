@@ -3,7 +3,7 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "intl-format-cache": ["../intl-format-cache"]
+            "@f-fjs/intl-format-cache": ["../@f-fjs/intl-format-cache"]
         }
     }
 }

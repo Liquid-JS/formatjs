@@ -14,7 +14,7 @@ import {
   invariant,
   isLiteralPart,
   LiteralPart,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 export interface IntlListFormatOptions {
   /**

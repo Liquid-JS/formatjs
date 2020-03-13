@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
-import {_} from '@formatjs/macro';
+import {_} from '@f-fjs/macro';
 
 export default class Foo extends Component {
   render() {

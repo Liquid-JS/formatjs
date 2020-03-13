@@ -2,19 +2,19 @@
 
 Parses [ICU Message strings][icu] into an AST via JavaScript.
 
-[![npm Version](https://badgen.net/npm/v/intl-messageformat-parser)](https://www.npmjs.com/package/intl-messageformat-parser)
-[![size](https://badgen.net/bundlephobia/minzip/intl-messageformat-parser)](https://bundlephobia.com/result?p=intl-messageformat-parser)
+[![npm Version](https://badgen.net/npm/v/@f-fjs/intl-messageformat-parser)](https://www.npmjs.com/package/@f-fjs/intl-messageformat-parser)
+[![size](https://badgen.net/bundlephobia/minzip/@f-fjs/intl-messageformat-parser)](https://bundlephobia.com/result?p=@f-fjs/intl-messageformat-parser)
 
 ## Overview
 
-This package implements a parser in JavaScript that parses the industry standard [ICU Message strings][icu] — used for internationalization — into an AST. The produced AST can then be used by a compiler, like [`intl-messageformat`][intl-mf], to produce localized formatted strings for display to users.
+This package implements a parser in JavaScript that parses the industry standard [ICU Message strings][icu] — used for internationalization — into an AST. The produced AST can then be used by a compiler, like [`@f-fjs/intl-messageformat`][intl-mf], to produce localized formatted strings for display to users.
 
 This parser is written in [PEG.js][], a parser generator for JavaScript.
 
 ## Usage
 
 ```ts
-import {parse} from 'intl-messageformat-parser';
+import {parse} from '@f-fjs/intl-messageformat-parser';
 const ast = parse('this is {count, plural, one{# dog} other{# dogs}}');
 ```
 

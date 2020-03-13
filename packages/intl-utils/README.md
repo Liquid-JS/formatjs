@@ -34,7 +34,7 @@ interface Threshold {
 Example:
 
 ```ts
-import {selectUnit} from '@formatjs/intl-utils';
+import {selectUnit} from '@f-fjs/intl-utils';
 selectUnit(Date.now() - 1000); // { value: -1, unit: 'second' }
 selectUnit(Date.now() - 44000); // { value: -44, unit: 'second' }
 selectUnit(Date.now() - 50000); // { value: 1, unit: 'minute' }
@@ -50,5 +50,5 @@ selectUnit(Date.now() - 50000); // { value: 1, unit: 'minute' }
 
 The examples above have not even tackled the differences in non-Gregorian calendars. There is an issue opened upstream in the spec that potentially introduces a [`best fit` algorithm](https://github.com/tc39/proposal-intl-relative-time/issues/47). Therefore, we recommend that you implement your own version of `selectUnit` that matches your editorial expectation.
 
-[npm]: https://www.npmjs.org/package/@formatjs/intl-utils
-[npm-badge]: https://img.shields.io/npm/v/@formatjs/intl-utils.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/@f-fjs/intl-utils
+[npm-badge]: https://img.shields.io/npm/v/@f-fjs/intl-utils.svg?style=flat-square

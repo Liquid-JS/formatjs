@@ -5,8 +5,8 @@
         "rootDir": "src",
         "baseUrl": ".",
         "paths": {
-            "@formatjs/intl-relativetimeformat": ["../intl-relativetimeformat"],
-            "intl-messageformat": ["../intl-messageformat"]
+            "@f-fjs/intl-relativetimeformat": ["../intl-relativetimeformat"],
+            "@f-fjs/intl-messageformat": ["../@f-fjs/intl-messageformat"]
         }
     },
     "include": ["src/*.ts"]

@@ -6,7 +6,7 @@
         "module": "commonjs",
         "baseUrl": ".",
         "paths": {
-            "intl-messageformat-parser": ["../intl-messageformat-parser"]
+            "@f-fjs/intl-messageformat-parser": ["../@f-fjs/intl-messageformat-parser"]
         },
         "types": [
             "babel__core",

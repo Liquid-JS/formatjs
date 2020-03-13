@@ -1,11 +1,11 @@
-# eslint-plugin-formatjs
+# @f-fjs/eslint-plugin-formatjs
 
 This eslint plugin allows you to enforce certain rules in your ICU message. This is currently under development
 
 ## Usage
 
 ```bash
-npm install eslint-plugin-formatjs
+npm install @f-fjs/eslint-plugin-formatjs
 ```
 
 Then in your eslint config:
@@ -19,10 +19,10 @@ Then in your eslint config:
 }
 ```
 
-Currently this uses `intl.formatMessage`, `defineMessages`, `<FormattedMessage>` from `react-intl`, or `_` from `@formatjs/macro` as hooks to verify the message. Therefore, in your code use 1 of the following mechanisms:
+Currently this uses `intl.formatMessage`, `defineMessages`, `<FormattedMessage>` from `react-intl`, or `_` from `@f-fjs/macro` as hooks to verify the message. Therefore, in your code use 1 of the following mechanisms:
 
 ```tsx
-import {_} from '@formatjs/macro';
+import {_} from '@f-fjs/macro';
 
 const message = _({
   defaultMessage: 'foo',
@@ -335,4 +335,4 @@ const messages = defineMessages({
 
 ### `supported-datetime-skeleton`
 
-Since formatjs only supports a subset of [DateTime Skeleton](../intl-messageformat-parser/README.md#Supported-DateTime-Skeleton). This rule exists to make sure you don't use a unsupported pattern.
+Since formatjs only supports a subset of [DateTime Skeleton](../@f-fjs/intl-messageformat-parser/README.md#Supported-DateTime-Skeleton). This rule exists to make sure you don't use a unsupported pattern.

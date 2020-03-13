@@ -1,5 +1,5 @@
 {
-  "name": "@formatjs/intl-unified-numberformat",
+  "name": "@f-fjs/intl-unified-numberformat",
   "version": "3.2.0",
   "description": "Ponyfill for intl unified numberformat proposal",
   "keywords": [
@@ -25,21 +25,21 @@
     "src"
   ],
   "devDependencies": {
-    "@formatjs/intl-pluralrules": "^1.5.2",
+    "@f-fjs/intl-pluralrules": "^1.5.2",
     "chalk": "^2.0.0",
-    "formatjs-extract-cldr-data": "^10.1.1"
+    "@f-fjs/extract-cldr-data": "^10.1.1"
   },
   "dependencies": {
-    "@formatjs/intl-utils": "^2.2.0"
+    "@f-fjs/intl-utils": "^2.2.0"
   },
   "scripts": {
     "benchmark": "ts-node --project ./tsconfig.cjs.json tests/benchmark",
     "build": "npm run cldr && npm run compile && npm run rollup ",
-    "cldr": "NODE_OPTIONS=--max-old-space-size=8192 ts-node --project tsconfig.cjs.json scripts/cldr",
+    "cldr": "cross-env NODE_OPTIONS=--max-old-space-size=8192 ts-node --project tsconfig.cjs.json scripts/cldr",
     "clean": "rimraf dist dist-es6 lib",
     "compile": "tsc && tsc -p tsconfig.cjs.json && tsc -p tsconfig.es6.json && api-extractor run --local",
     "jest": "cross-env NODE_ICU_DATA=../../node_modules/full-icu TS_NODE_PROJECT=tsconfig.cjs.json cross-env NODE_ENV=test jest",
-    "rollup": "NODE_OPTIONS=--max-old-space-size=8192 rollup -c rollup.config.js",
+    "rollup": "cross-env NODE_OPTIONS=--max-old-space-size=8192 rollup -c rollup.config.js",
     "test": "npm run jest",
     "test262": "cross-env NODE_ICU_DATA=../../node_modules/full-icu TS_NODE_PROJECT=tsconfig.cjs.json ts-node tests/runner"
   },

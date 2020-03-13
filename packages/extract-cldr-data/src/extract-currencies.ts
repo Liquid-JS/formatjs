@@ -13,7 +13,7 @@ import generateFieldExtractorFn, {
 } from './utils';
 import {sync as globSync} from 'glob';
 import {resolve, dirname} from 'path';
-import {CurrencyData, LDMLPluralRuleMap} from '@formatjs/intl-utils';
+import {CurrencyData, LDMLPluralRuleMap} from '@f-fjs/intl-utils';
 
 const unitsLocales = globSync('*/currencies.json', {
   cwd: resolve(

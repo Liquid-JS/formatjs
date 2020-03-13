@@ -5,7 +5,7 @@ import {
   getParentLocalesByLang,
   LDMLPluralRule,
   LDMLPluralRuleMap,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 import {pickBy, isEmpty, isEqual} from 'lodash';
 
 function dedupeUsingParentHierarchy<DataType extends Record<string, any>>(

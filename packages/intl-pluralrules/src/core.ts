@@ -13,7 +13,7 @@ import {
   getInternalSlot,
   setNumberFormatDigitOptions,
   NumberFormatDigitInternalSlots,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 function validateInstance(instance: any, method: string) {
   if (!(instance instanceof PluralRules)) {

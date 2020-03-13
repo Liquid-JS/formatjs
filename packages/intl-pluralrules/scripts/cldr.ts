@@ -1,4 +1,4 @@
-import {getAllLanguages} from 'formatjs-extract-cldr-data';
+import {getAllLanguages} from '@f-fjs/extract-cldr-data';
 import {resolve} from 'path';
 import {outputFileSync} from 'fs-extra';
 import * as serialize from 'serialize-javascript';
@@ -6,7 +6,7 @@ import {
   PluralRulesLocaleData,
   getAliasesByLang,
   getParentLocalesByLang,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 const Compiler = require('make-plural-compiler');
 Compiler.load(
   require('cldr-core/supplemental/plurals.json'),

@@ -11,7 +11,7 @@ import {Locale} from './types';
 import generateFieldExtractorFn from './utils';
 import {sync as globSync} from 'glob';
 import {resolve, dirname} from 'path';
-import {FieldData, LocaleFieldsData} from '@formatjs/intl-utils';
+import {FieldData, LocaleFieldsData} from '@f-fjs/intl-utils';
 
 const dateFieldsLocales = globSync('*/dateFields.json', {
   cwd: resolve(

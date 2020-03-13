@@ -1,5 +1,5 @@
 import cliMain from '../../src/cli';
-import {OptionsSchema} from 'babel-plugin-react-intl/dist/options';
+import {OptionsSchema} from '@f-fjs/babel-plugin-react-intl/dist/options';
 
 jest.mock('@babel/core', () => {
   const mockBabelResult = {
@@ -58,7 +58,7 @@ test('it passes camelCase-converted arguments to babel API', () => {
       filename: 'file1.js',
       plugins: [
         [
-          require.resolve('babel-plugin-react-intl'),
+          require.resolve('@f-fjs/babel-plugin-react-intl'),
           {
             ...pluginOptions,
             overrideIdFn: expect.any(Function),
@@ -74,7 +74,7 @@ test('it passes camelCase-converted arguments to babel API', () => {
       filename: 'file2.tsx',
       plugins: [
         [
-          require.resolve('babel-plugin-react-intl'),
+          require.resolve('@f-fjs/babel-plugin-react-intl'),
           {...pluginOptions, overrideIdFn: expect.any(Function)},
         ],
       ],

@@ -25,7 +25,7 @@ async function main(argv: string[]) {
     .action(() => commander.help());
 
   // Long text wrapping to available terminal columns: https://github.com/tj/commander.js/pull/956
-  // NOTE: please keep the help text in sync with babel-plugin-react-intl documentation.
+  // NOTE: please keep the help text in sync with @f-fjs/babel-plugin-react-intl documentation.
   commander
     .command('extract [files...]')
     .description(

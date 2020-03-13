@@ -7,7 +7,7 @@ import {
   SignDisplayPattern,
   CurrencySignPattern,
   NotationPattern,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 import {extractILD} from '../src/data';
 import * as en from '../dist/locale-data/en.json';
 

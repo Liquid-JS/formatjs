@@ -281,7 +281,7 @@ Object {
 Object.defineProperty(exports, \\"__esModule\\", { value: true });
 const react_1 = require(\\"react\\");
 const react_intl_1 = require(\\"react-intl\\");
-const macro_1 = require(\\"@formatjs/macro\\");
+const macro_1 = require(\\"@f-fjs/macro\\");
 class Foo extends react_1.Component {
     render() {
         return (react_1.default.createElement(\\"div\\", null,

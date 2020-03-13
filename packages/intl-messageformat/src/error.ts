@@ -3,8 +3,6 @@ export const enum ErrorCode {
   MISSING_VALUE,
   // When value supplied is invalid
   INVALID_VALUE,
-  // When we need specific Intl API but it's not available
-  MISSING_INTL_API,
 }
 
 export class FormatError extends Error {

@@ -4,10 +4,10 @@ import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 const resolveConfig = resolve({
   customResolveOptions: {
-    '@formatjs/intl-pluralrules': './packages/intl-pluralrules',
-    '@formatjs/intl-relativetimeformat': './packages/intl-relativetimeformat',
-    '@formatjs/intl-utils': './packages/intl-utils',
-    'intl-messageformat': './packages/intl-messageformat',
+    '@f-fjs/intl-pluralrules': './packages/intl-pluralrules',
+    '@f-fjs/intl-relativetimeformat': './packages/intl-relativetimeformat',
+    '@f-fjs/intl-utils': './packages/intl-utils',
+    '@f-fjs/intl-messageformat': './packages/intl-messageformat',
   }
 })
 export default [

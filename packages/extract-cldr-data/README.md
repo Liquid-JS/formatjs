@@ -11,7 +11,7 @@ This package offers a function to extract the CLDR data needed by the FormatJS l
 The following example shows how the locale hierarchy is used to return the unique data:
 
 ```js
-var extractData = require('formatjs-extract-cldr-data');
+var extractData = require('@f-fjs/extract-cldr-data');
 
 var data = extractData({
     locales    : ['en-US', 'en-GB'],
@@ -94,5 +94,5 @@ The CLDR data contained in this packaged is licensed under the Apache, ICU, and 
 
 [cldr]: http://cldr.unicode.org/
 [formatjs]: http://formatjs.io/
-[npm]: https://www.npmjs.org/package/formatjs-extract-cldr-data
-[npm-badge]: https://img.shields.io/npm/v/formatjs-extract-cldr-data.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/@f-fjs/extract-cldr-data
+[npm-badge]: https://img.shields.io/npm/v/@f-fjs/extract-cldr-data.svg?style=flat-square

@@ -5,7 +5,7 @@ A ponyfill/polyfill for [`intl-unified-numberformat`](https://github.com/tc39/pr
 ## Installation
 
 ```
-npm install @formatjs/intl-unified-numberformat
+npm install @f-fjs/intl-unified-numberformat
 ```
 
 ## Requirements
@@ -27,12 +27,12 @@ Everything in the https://github.com/tc39/proposal-unified-intl-numberformat pro
 To use the ponyfill, import it along with its data:
 
 ```tsx
-import {UnifiedNumberFormat} from '@formatjs/intl-unified-numberformat';
+import {UnifiedNumberFormat} from '@f-fjs/intl-unified-numberformat';
 UnifiedNumberFormat.__addLocaleData(
-  require('@formatjs/intl-unified-numberformat/dist/locale-data/zh.json') // locale-data for zh
+  require('@f-fjs/intl-unified-numberformat/dist/locale-data/zh.json') // locale-data for zh
 );
 UnifiedNumberFormat.__addLocaleData(
-  require('@formatjs/intl-unified-numberformat/dist/locale-data/en.json') // locale-data for en
+  require('@f-fjs/intl-unified-numberformat/dist/locale-data/en.json') // locale-data for en
 );
 
 new UnifiedNumberFormat('zh', {
@@ -45,13 +45,13 @@ new UnifiedNumberFormat('zh', {
 To use this as a polyfill, override `Intl.NumberFormat` as below:
 
 ```tsx
-import '@formatjs/intl-unified-numberformat/polyfill';
+import '@f-fjs/intl-unified-numberformat/polyfill';
 if (typeof Intl.NumberFormat.__addLocaleData === 'function') {
   Intl.NumberFormat.__addLocaleData(
-    require('@formatjs/intl-unified-numberformat/dist/locale-data/zh.json') // locale-data for zh
+    require('@f-fjs/intl-unified-numberformat/dist/locale-data/zh.json') // locale-data for zh
   );
   Intl.NumberFormat.__addLocaleData(
-    require('@formatjs/intl-unified-numberformat/dist/locale-data/en.json') // locale-data for en
+    require('@f-fjs/intl-unified-numberformat/dist/locale-data/en.json') // locale-data for en
   );
 }
 

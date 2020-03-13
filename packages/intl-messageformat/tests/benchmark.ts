@@ -1,7 +1,7 @@
 import {Suite, Event} from 'benchmark';
 import IntlMessageFormat, {Formatters} from '../src';
-import '@formatjs/intl-pluralrules/polyfill-locales';
-import memoize from 'intl-format-cache';
+import '@f-fjs/intl-pluralrules/polyfill-locales';
+import memoize from '@f-fjs/intl-format-cache';
 
 const msg =
   '' +

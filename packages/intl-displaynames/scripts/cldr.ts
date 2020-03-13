@@ -1,14 +1,14 @@
 import {
   extractAllDisplayNames,
   getAllDisplayNamesLocales,
-} from 'formatjs-extract-cldr-data';
+} from '@f-fjs/extract-cldr-data';
 import {resolve, join} from 'path';
 import {outputFileSync, outputJSONSync} from 'fs-extra';
 import {
   DisplayNamesLocaleData,
   getAliasesByLang,
   getParentLocalesByLang,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 const data = extractAllDisplayNames();
 const allData = getAllDisplayNamesLocales().reduce(

@@ -3,12 +3,12 @@
 A spec-compliant polyfill/ponyfill for Intl.RelativeTimeFormat fully tested by the [official ECMAScript Conformance test suite](https://github.com/tc39/test262)
 
 [![npm Version][npm-badge]][npm]
-![size](https://badgen.net/bundlephobia/minzip/@formatjs/intl-relativetimeformat)
+![size](https://badgen.net/bundlephobia/minzip/@f-fjs/intl-relativetimeformat)
 
 ## Installation
 
 ```
-npm install @formatjs/intl-relativetimeformat
+npm install @f-fjs/intl-relativetimeformat
 ```
 
 ## Requirements
@@ -26,15 +26,15 @@ This package requires the following capabilities:
 To use the ponyfill, import it along with its data:
 
 ```tsx
-import IntlRelativeTimeFormat from '@formatjs/intl-relativetimeformat';
+import IntlRelativeTimeFormat from '@f-fjs/intl-relativetimeformat';
 // locale-data for zh
 IntlRelativeTimeFormat.__addLocaleData(
-  require('@formatjs/intl-relativetimeformat/dist/locale-data/zh.json')
+  require('@f-fjs/intl-relativetimeformat/dist/locale-data/zh.json')
 );
 
 // locale-data for zh
 IntlRelativeTimeFormat.__addLocaleData(
-  require('@formatjs/intl-relativetimeformat/dist/locale-data/en.json')
+  require('@f-fjs/intl-relativetimeformat/dist/locale-data/en.json')
 );
 
 new IntlRelativeTimeFormat('zh-CN').format(-1, 'second'); // '1秒钟前'
@@ -45,19 +45,19 @@ new IntlRelativeTimeFormat('zh-CN').format(-1, 'second'); // '1秒钟前'
 To use the polyfill, just import it to make sure that a fully functional Intl.RelativeTimeFormat is available in your environment:
 
 ```tsx
-import '@formatjs/intl-relativetimeformat/polyfill';
-import '@formatjs/intl-relativetimeformat/dist/locale-data/de'; // Add locale data for de
+import '@f-fjs/intl-relativetimeformat/polyfill';
+import '@f-fjs/intl-relativetimeformat/dist/locale-data/de'; // Add locale data for de
 ```
 
 If you want to polyfill all locales (e.g for Node):
 
 ```tsx
-import '@formatjs/intl-relativetimeformat/polyfill-locales';
+import '@f-fjs/intl-relativetimeformat/polyfill-locales';
 ```
 
 ## Tests
 
 This library is fully [test262](https://github.com/tc39/test262/tree/master/test/intl402/RelativeTimeFormat)-compliant.
 
-[npm]: https://www.npmjs.org/package/@formatjs/intl-relativetimeformat
-[npm-badge]: https://img.shields.io/npm/v/@formatjs/intl-relativetimeformat.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/@f-fjs/intl-relativetimeformat
+[npm-badge]: https://img.shields.io/npm/v/@f-fjs/intl-relativetimeformat.svg?style=flat-square

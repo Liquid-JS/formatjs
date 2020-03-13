@@ -26,7 +26,7 @@
             "yargs"
         ],
         "paths": {
-            "@formatjs/intl-utils": ["../intl-utils"]
+            "@f-fjs/intl-utils": ["../intl-utils"]
         }
     },
     "include": ["src/*.ts"]

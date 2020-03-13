@@ -1,7 +1,7 @@
 import {
   extractAllRelativeFields,
   getAllDateFieldsLocales,
-} from 'formatjs-extract-cldr-data';
+} from '@f-fjs/extract-cldr-data';
 import {resolve, join} from 'path';
 import {outputFileSync, outputJSONSync} from 'fs-extra';
 import {

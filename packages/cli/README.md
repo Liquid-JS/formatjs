@@ -1,12 +1,12 @@
 # `formatjs-cli`
 
-This CLI allows you to extract `intl-messageformat` messages from JavaScript / TypeScript source code,
+This CLI allows you to extract `@f-fjs/intl-messageformat` messages from JavaScript / TypeScript source code,
 including React components that uses `react-intl`.
 
 ## Usage
 
 ```shell
-$ npm -g i @formatjs/cli
+$ npm -g i @f-fjs/cli
 $ formatjs extract --help
 Usage: formatjs extract [options] [files...]
 Extract string messages from React components that use react-intl.

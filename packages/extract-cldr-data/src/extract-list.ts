@@ -9,7 +9,7 @@ import {Locale} from './types';
 import generateFieldExtractorFn from './utils';
 import {sync as globSync} from 'glob';
 import {resolve, dirname} from 'path';
-import {ListPatternFieldsData, ListPattern} from '@formatjs/intl-utils';
+import {ListPatternFieldsData, ListPattern} from '@f-fjs/intl-utils';
 
 const listPatternLocales = globSync('*/listPatterns.json', {
   cwd: resolve(

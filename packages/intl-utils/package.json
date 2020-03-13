@@ -1,5 +1,5 @@
 {
-  "name": "@formatjs/intl-utils",
+  "name": "@f-fjs/intl-utils",
   "version": "2.2.0",
   "description": "Smartly determine best unit for relative time format",
   "keywords": [

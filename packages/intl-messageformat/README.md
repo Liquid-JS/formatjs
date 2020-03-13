@@ -4,8 +4,8 @@ Formats ICU Message strings with number, date, plural, and select placeholders t
 
 [![npm Version][npm-badge]][npm]
 
-![`intl-messageformat` minzipped size](https://badgen.net/badgesize/normal/https://unpkg.com/intl-messageformat/dist/umd/intl-messageformat.min.js?label=intl-messageformat+minzipped+size)
-![`intl-messageformat/core` minzipped size](https://badgen.net/badgesize/normal/https://unpkg.com/intl-messageformat/core.js?label=intl-messageformat/core+minzipped+size)
+![`@f-fjs/intl-messageformat` minzipped size](https://badgen.net/badgesize/normal/https://unpkg.com/@f-fjs/intl-messageformat/dist/umd/@f-fjs/intl-messageformat.min.js?label=@f-fjs/intl-messageformat+minzipped+size)
+![`@f-fjs/intl-messageformat/core` minzipped size](https://badgen.net/badgesize/normal/https://unpkg.com/@f-fjs/intl-messageformat/core.js?label=@f-fjs/intl-messageformat/core+minzipped+size)
 
 ## Overview
 
@@ -97,12 +97,12 @@ This package assumes that the [`Intl`][intl] global object exists in the runtime
 
 1. `Intl.NumberFormat` for number formatting (can be polyfilled using [Intl.js][])
 2. `Intl.DateTimeFormat` for date time formatting (can be polyfilled using [Intl.js][])
-3. `Intl.PluralRules` for plural/ordinal formatting (can be polyfilled using [@formatjs/intl-pluralrules][])
+3. `Intl.PluralRules` for plural/ordinal formatting (can be polyfilled using [@f-fjs/intl-pluralrules][])
 
 ### Loading Intl MessageFormat in a browser
 
 ```html
-<script src="intl-messageformat/intl-messageformat.min.js"></script>
+<script src="@f-fjs/intl-messageformat/@f-fjs/intl-messageformat.min.js"></script>
 ```
 
 ### Loading Intl MessageFormat in Node.js
@@ -110,11 +110,11 @@ This package assumes that the [`Intl`][intl] global object exists in the runtime
 Either do:
 
 ```tsx
-import IntlMessageFormat from 'intl-messageformat';
+import IntlMessageFormat from '@f-fjs/intl-messageformat';
 ```
 
 ```tsx
-const IntlMessageFormat = require('intl-messageformat').default;
+const IntlMessageFormat = require('@f-fjs/intl-messageformat').default;
 ```
 
 **NOTE: Your Node has to include [full ICU](https://nodejs.org/api/intl.html)**
@@ -225,29 +225,29 @@ In this example, we're defining a `USD` number format style which is passed to t
 You can pass in pre-parsed AST to IntlMessageFormat like this:
 
 ```ts
-import IntlMessageFormat from 'intl-messageformat';
+import IntlMessageFormat from '@f-fjs/intl-messageformat';
 new IntlMessageFormat('hello').format(); // prints out hello
 
 // is equivalent to
 
-import IntlMessageFormat from 'intl-messageformat/core';
-import parser from 'intl-messageformat-parser';
+import IntlMessageFormat from '@f-fjs/intl-messageformat/core';
+import parser from '@f-fjs/intl-messageformat-parser';
 new IntlMessageFormat(parser.parse('hello')).format(); // prints out hello
 ```
 
 This helps performance for cases like SSR or preload/precompilation-supported platforms since `AST` can be cached.
 
-If your messages are all in ASTs, you can alias `intl-messageformat-parser` to `{default: undefined}` to save some bytes during bundling.
+If your messages are all in ASTs, you can alias `@f-fjs/intl-messageformat-parser` to `{default: undefined}` to save some bytes during bundling.
 
 ### Formatters
 
-For complex messages, initializing `Intl.*` constructors can be expensive. Therefore, we allow user to pass in `formatters` to provide memoized instances of these `Intl` objects. This opts combines with [passing in AST](#passing-in-ast) and `intl-format-cache` can speed things up by 30x per the benchmark down below.
+For complex messages, initializing `Intl.*` constructors can be expensive. Therefore, we allow user to pass in `formatters` to provide memoized instances of these `Intl` objects. This opts combines with [passing in AST](#passing-in-ast) and `@f-fjs/intl-format-cache` can speed things up by 30x per the benchmark down below.
 
 For example:
 
 ```ts
-import IntlMessageFormat from 'intl-messageformat';
-import memoizeIntlConstructor from 'intl-format-cache';
+import IntlMessageFormat from '@f-fjs/intl-messageformat';
+import memoizeIntlConstructor from '@f-fjs/intl-format-cache';
 const formatters = {
   getNumberFormat: memoizeIntlConstructor(Intl.NumberFormat),
   getDateTimeFormat: memoizeIntlConstructor(Intl.DateTimeFormat),
@@ -300,8 +300,8 @@ complex msg w/ formatters format x 1,878 ops/sec ±16.63% (64 runs sampled)
 complex preparsed msg w/ formatters format x 26,482 ops/sec ±2.55% (84 runs sampled)
 ```
 
-[npm]: https://www.npmjs.org/package/intl-messageformat
-[npm-badge]: https://img.shields.io/npm/v/intl-messageformat.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/@f-fjs/intl-messageformat
+[npm-badge]: https://img.shields.io/npm/v/@f-fjs/intl-messageformat.svg?style=flat-square
 [strawman]: http://wiki.ecmascript.org/doku.php?id=globalization:messageformatting
 [parser]: https://github.com/formatjs/formatjs/blob/master/packages/intl-messageformat-parser
 [icu]: http://userguide.icu-project.org/formatparse/messages
@@ -313,4 +313,4 @@ complex preparsed msg w/ formatters format x 26,482 ops/sec ±2.55% (84 runs sam
 [intl.js]: https://github.com/andyearnshaw/Intl.js
 [rawgit]: https://rawgit.com/
 [semver]: http://semver.org/
-[@formatjs/intl-pluralrules]: https://github.com/formatjs/formatjs
+[@f-fjs/intl-pluralrules]: https://github.com/formatjs/formatjs

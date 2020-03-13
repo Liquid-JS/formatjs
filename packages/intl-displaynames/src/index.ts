@@ -12,7 +12,7 @@ import {
   unpackData,
   DisplayNamesData,
   toString,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 export interface DisplayNamesOptions {
   localeMatcher?: 'lookup' | 'best fit';

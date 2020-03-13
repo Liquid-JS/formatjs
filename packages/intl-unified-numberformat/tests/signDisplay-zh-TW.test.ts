@@ -1,4 +1,4 @@
-import '@formatjs/intl-pluralrules/polyfill-locales';
+import '@f-fjs/intl-pluralrules/polyfill-locales';
 import {UnifiedNumberFormat} from '../src/core';
 UnifiedNumberFormat.__addLocaleData(require('../dist/locale-data/zh.json'));
 UnifiedNumberFormat.__addLocaleData(

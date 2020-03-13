@@ -13,12 +13,10 @@ import {
   MessageFormatElement,
   parseDateTimeSkeleton,
   isTagElement,
-} from 'intl-messageformat-parser';
+} from '@f-fjs/intl-messageformat-parser';
 import {
   MissingValueError,
   InvalidValueError,
-  ErrorCode,
-  FormatError,
 } from './error';
 
 export interface Formats {
@@ -241,14 +239,6 @@ export function formatToParts<T>(
     if (isPluralElement(el)) {
       let opt = el.options[`=${value}`];
       if (!opt) {
-        if (!Intl.PluralRules) {
-          throw new FormatError(
-            `Intl.PluralRules is not available in this environment.
-Try polyfilling it using "@formatjs/intl-pluralrules"
-`,
-            ErrorCode.MISSING_INTL_API
-          );
-        }
         const rule = formatters
           .getPluralRules(locales, {type: el.pluralType})
           .select((value as number) - (el.offset || 0));

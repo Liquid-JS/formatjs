@@ -630,7 +630,7 @@ Array [
 ]
 `;
 
-exports[`options should be able to parse inline _ from @formatjs/macro 1`] = `
+exports[`options should be able to parse inline _ from @f-fjs/macro 1`] = `
 Array [
   Object {
     "defaultMessage": "Hello World!",

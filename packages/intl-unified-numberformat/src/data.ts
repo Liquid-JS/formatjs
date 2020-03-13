@@ -15,7 +15,7 @@ import {
   CurrencySignPattern,
   RawCurrencyData,
   CompactSignPattern,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 function invariant(
   condition: boolean,

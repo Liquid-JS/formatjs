@@ -3,7 +3,7 @@
 import {Suite} from 'benchmark';
 const memoize = require('fast-memoize');
 import memoizeIntl from '../src';
-import IntlMessageFormat from 'intl-messageformat';
+import IntlMessageFormat from '@f-fjs/intl-messageformat';
 
 function onCycle(ev: any) {
   console.log(String(ev.target));
@@ -23,7 +23,7 @@ new Suite('NumberFormat cache set', {
   .add('fast-memoize', () =>
     memoize(Intl.NumberFormat)('ar', {style: 'percent'})
   )
-  .add('intl-format-cache', () =>
+  .add('@f-fjs/intl-format-cache', () =>
     memoizeIntl(Intl.NumberFormat)('ar', {style: 'percent'})
   )
   .run();
@@ -38,7 +38,7 @@ new Suite('NumberFormat cache get', {
   onComplete,
 })
   .add('fast-memoize', () => nfm('de', {style: 'percent'}))
-  .add('intl-format-cache', () => nffc('de', {style: 'percent'}))
+  .add('@f-fjs/intl-format-cache', () => nffc('de', {style: 'percent'}))
   .add('not cached', () => new Intl.NumberFormat('de', {style: 'percent'}))
   .run();
 
@@ -50,7 +50,7 @@ new Suite('DateTimeFormat cache set', {
   .add('fast-memoize', () =>
     memoize(Intl.DateTimeFormat)('ar', {month: 'short'})
   )
-  .add('intl-format-cache', () =>
+  .add('@f-fjs/intl-format-cache', () =>
     memoizeIntl(Intl.DateTimeFormat)('ar', {month: 'short'})
   )
   .run();
@@ -65,7 +65,7 @@ new Suite('DateTimeFormat cache get', {
   onComplete,
 })
   .add('fast-memoize', () => dtm('de', {month: 'short'}))
-  .add('intl-format-cache', () => dtfc('de', {month: 'short'}))
+  .add('@f-fjs/intl-format-cache', () => dtfc('de', {month: 'short'}))
   .add('not cached', () => new Intl.DateTimeFormat('de', {month: 'short'}))
   .run();
 
@@ -83,7 +83,7 @@ new Suite('IntlMessageFormat cache set', {
       },
     })
   )
-  .add('intl-format-cache', () =>
+  .add('@f-fjs/intl-format-cache', () =>
     memoizeIntl(IntlMessageFormat)('message {token}', 'ar', {
       date: {
         verbose: {
@@ -124,7 +124,7 @@ new Suite('IntlMessageFormat cache get', {
       },
     })
   )
-  .add('intl-format-cache', () =>
+  .add('@f-fjs/intl-format-cache', () =>
     mffc('message {token}', 'ar', {
       date: {
         verbose: {
@@ -154,7 +154,7 @@ new Suite('IntlMessageFormat cache get simple arg', {
   onComplete,
 })
   .add('fast-memoize', () => mfm('message {token}', 'ar'))
-  .add('intl-format-cache', () => mffc('message {token}', 'ar'))
+  .add('@f-fjs/intl-format-cache', () => mffc('message {token}', 'ar'))
   .add('not cached', () => new IntlMessageFormat('message {token}', 'ar'))
   .run();
 

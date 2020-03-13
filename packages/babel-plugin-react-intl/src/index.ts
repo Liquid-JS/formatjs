@@ -7,7 +7,7 @@
 import * as p from 'path';
 import {writeFileSync} from 'fs';
 import {mkdirpSync} from 'fs-extra';
-import {parse} from 'intl-messageformat-parser/dist';
+import {parse} from '@f-fjs/intl-messageformat-parser/dist';
 const {declare} = require('@babel/helper-plugin-utils') as any;
 import {types as t, PluginObj} from '@babel/core';
 import {
@@ -299,7 +299,7 @@ export default declare((api: any, options: OptionsSchema) => {
   api.assertVersion(7);
 
   validate(OPTIONS_SCHEMA as any, options, {
-    name: 'babel-plugin-react-intl',
+    name: '@f-fjs/babel-plugin-react-intl',
     baseDataPath: 'options',
   });
   const {messagesDir} = options;
@@ -581,12 +581,12 @@ function isMultipleMessagesDeclMacro(
 ) {
   return (
     referencesImport(callee, moduleSourceName, ['defineMessages']) ||
-    referencesImport(callee, '@formatjs/macro', ['defineMessages'])
+    referencesImport(callee, '@f-fjs/macro', ['defineMessages'])
   );
 }
 
 function isSingularMessagesDeclMacro(callee: NodePath) {
-  return referencesImport(callee, '@formatjs/macro', ['_']);
+  return referencesImport(callee, '@f-fjs/macro', ['_']);
 }
 
 function getMessagesObjectFromExpression(

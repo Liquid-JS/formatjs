@@ -4,8 +4,8 @@ Copyrights licensed under the New BSD License.
 See the accompanying LICENSE file for terms.
 */
 
-import {parse, MessageFormatElement} from 'intl-messageformat-parser';
-import memoizeIntlConstructor from 'intl-format-cache';
+import {parse, MessageFormatElement} from '@f-fjs/intl-messageformat-parser';
+import memoizeIntlConstructor from '@f-fjs/intl-format-cache';
 import {
   FormatterCache,
   Formatters,

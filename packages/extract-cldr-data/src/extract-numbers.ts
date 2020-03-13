@@ -19,7 +19,7 @@ import {
   LDMLPluralRuleMap,
   DecimalFormatNum,
   RawCurrencyData,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 const unitsLocales = globSync('*/numbers.json', {
   cwd: resolve(

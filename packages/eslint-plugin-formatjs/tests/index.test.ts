@@ -18,7 +18,7 @@ const rules = (plugin as plugin.Plugin).rules;
 
 ruleTester.run('enforce-description', rules['enforce-description'], {
   valid: [
-    `import {_} from '@formatjs/macro'
+    `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: '{count, plural, one {#} other {# more}}',
     description: 'asd'
@@ -35,7 +35,7 @@ _({
   invalid: [
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{count, plural, one {#} other {# more}}'
             })`,
@@ -95,7 +95,7 @@ _({
 
 ruleTester.run('enforce-default-message', rules['enforce-default-message'], {
   valid: [
-    `import {_} from '@formatjs/macro'
+    `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: 'this is default message',
     description: 'asd'
@@ -112,7 +112,7 @@ _({
   invalid: [
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 description: 'this is default message'
             })`,
@@ -172,7 +172,7 @@ _({
 
 ruleTester.run('no-camel-case', rules['no-camel-case'], {
   valid: [
-    `import {_} from '@formatjs/macro'
+    `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: 'a {placeholder}',
     description: 'asd'
@@ -185,7 +185,7 @@ _({
   invalid: [
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: 'a {placeHolder}'
             })`,
@@ -200,7 +200,7 @@ _({
 
 ruleTester.run('no-multiple-plurals', rules['no-multiple-plurals'], {
   valid: [
-    `import {_} from '@formatjs/macro'
+    `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: 'a {placeholder}',
     description: 'asd'
@@ -213,7 +213,7 @@ _({
   invalid: [
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{p1, plural, one{one}} {p2, plural, one{two}}'
             })`,
@@ -225,7 +225,7 @@ _({
     },
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{p1, plural, one{{p2, plural, one{two}}}}'
             })`,
@@ -241,7 +241,7 @@ _({
 ruleTester.run('enforce-plural-rules', rules['enforce-plural-rules'], {
   valid: [
     {
-      code: `import {_} from '@formatjs/macro'
+      code: `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: '{count, plural, one {#} other {# more}}',
     description: 'asd'
@@ -253,7 +253,7 @@ _({
       ],
     },
     {
-      code: `import {_} from '@formatjs/macro'
+      code: `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: '{count, plural, one {#} other {# more}}',
     description: 'asd'
@@ -265,7 +265,7 @@ _({
       ],
     },
     {
-      code: `import {_} from '@formatjs/macro'
+      code: `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: '{count, plural, one {#} other {# more}}',
     description: 'asd'
@@ -286,7 +286,7 @@ _({
   invalid: [
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{count, plural, one {#} other {# more}}'
             })`,
@@ -303,7 +303,7 @@ _({
     },
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{count, plural, one {#}}'
             })`,
@@ -415,7 +415,7 @@ _({
 ruleTester.run('blacklist-elements', rules['blacklist-elements'], {
   valid: [
     {
-      code: `import {_} from '@formatjs/macro'
+      code: `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: '{count, plural, one {#} other {# more}}'
 })`,
@@ -429,7 +429,7 @@ _({
   invalid: [
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{count, selectordinal, offset:1 one {#} other {# more}}'
             })`,
@@ -445,7 +445,7 @@ _({
 
 ruleTester.run('no-offset', rules['no-offset'], {
   valid: [
-    `import {_} from '@formatjs/macro'
+    `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: '{count, plural, one {#} other {# more}}'
 })`,
@@ -457,7 +457,7 @@ _({
   invalid: [
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{count, plural, offset:1 one {#} other {# more}}'
             })`,
@@ -469,7 +469,7 @@ _({
     },
     {
       code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{count, plural, offset:1 one {#} other {# more}'
             })`,
@@ -487,7 +487,7 @@ ruleTester.run(
   rules['supported-datetime-skeleton'],
   {
     valid: [
-      `import {_} from '@formatjs/macro'
+      `import {_} from '@f-fjs/macro'
 _({
     defaultMessage: '{ts, date, ::yyyyMMdd}'
 })`,
@@ -499,7 +499,7 @@ _({
     invalid: [
       {
         code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{ts, date, ::yQQQHm}'
             })`,
@@ -511,7 +511,7 @@ _({
       },
       {
         code: `
-            import {_} from '@formatjs/macro'
+            import {_} from '@f-fjs/macro'
             _({
                 defaultMessage: '{ts, date, ::DFg}'
             })`,

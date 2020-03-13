@@ -3,12 +3,12 @@
  * Copyrights licensed under the New BSD License.
  * See the accompanying LICENSE file for terms.
  */
-import '@formatjs/intl-pluralrules/polyfill-locales';
+import '@f-fjs/intl-pluralrules/polyfill-locales';
 import {IntlMessageFormat, createDefaultFormatters} from '../src/core';
 import {PART_TYPE} from '../src/formatters';
-import {parse} from 'intl-messageformat-parser';
+import {parse} from '@f-fjs/intl-messageformat-parser';
 import {expect as chaiExpect} from 'chai';
-import memoizeFormatConstructor from 'intl-format-cache';
+import memoizeFormatConstructor from '@f-fjs/intl-format-cache';
 
 declare let expect: typeof chaiExpect;
 
@@ -887,7 +887,7 @@ describe('IntlMessageFormat', function() {
   });
 });
 
-describe('intl-format-cache', function() {
+describe('@f-fjs/intl-format-cache', function() {
   const getMessageFormat = memoizeFormatConstructor(IntlMessageFormat);
 
   it('memoizes IntlMessageFormat', function() {

@@ -107,7 +107,7 @@ describe('options', () => {
     expect(require(join(fixtureDir, 'actual.json'))).toMatchSnapshot();
   });
 
-  it('should be able to parse inline _ from @formatjs/macro', () => {
+  it('should be able to parse inline _ from @f-fjs/macro', () => {
     const fixtureDir = join(fixturesDir, 'inline');
     expect(() => transform(join(fixtureDir, 'actual.js'))).not.toThrow();
 

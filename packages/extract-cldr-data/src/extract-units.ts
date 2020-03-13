@@ -17,7 +17,7 @@ import {
   UnitData,
   LDMLPluralRuleMap,
   RawUnitPattern,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 const unitsLocales = globSync('*/units.json', {
   cwd: resolve(

@@ -1,5 +1,5 @@
-import {ExtractedMessageDescriptor} from 'babel-plugin-react-intl/dist';
-import {OptionsSchema} from 'babel-plugin-react-intl/dist/options';
+import {ExtractedMessageDescriptor} from '@f-fjs/babel-plugin-react-intl/dist';
+import {OptionsSchema} from '@f-fjs/babel-plugin-react-intl/dist/options';
 import * as babel from '@babel/core';
 import {warn, getStdinAsString} from './console_utils';
 import keyBy from 'lodash/keyBy';
@@ -47,7 +47,7 @@ function getBabelConfig(
     },
     // We need to use require.resolve here, or otherwise the lookup is based on the current working
     // directory of the CLI.
-    plugins: [[require.resolve('babel-plugin-react-intl'), reactIntlOptions]],
+    plugins: [[require.resolve('@f-fjs/babel-plugin-react-intl'), reactIntlOptions]],
     highlightCode: true,
     // Extraction of string messages does not output the transformed JavaScript.
     sourceMaps: false,

@@ -4,14 +4,14 @@ import {
   generateNumberDataForLocales,
   locales,
   extractCurrencyDigits,
-} from 'formatjs-extract-cldr-data';
+} from '@f-fjs/extract-cldr-data';
 import {
   SANCTIONED_UNITS,
   getAliasesByLang,
   getParentLocalesByLang,
   removeUnitNamespace,
   RawNumberLocaleData,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 import {resolve, join} from 'path';
 import {outputFileSync, outputJSONSync} from 'fs-extra';
 

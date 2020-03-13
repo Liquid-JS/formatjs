@@ -36,7 +36,7 @@ import {
   UnifiedNumberFormatOptionsSignDisplay,
   UnifiedNumberFormatOptionsUnitDisplay,
   isWellFormedCurrencyCode,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 import {
   toRawFixed,
   toRawPrecision,

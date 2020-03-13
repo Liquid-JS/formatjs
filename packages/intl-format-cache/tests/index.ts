@@ -1,11 +1,11 @@
-import '@formatjs/intl-pluralrules/polyfill-locales';
-import '@formatjs/intl-relativetimeformat/polyfill-locales';
+import '@f-fjs/intl-pluralrules/polyfill-locales';
+import '@f-fjs/intl-relativetimeformat/polyfill-locales';
 import memoizeFormatConstructor from '../src';
 import {expect as chaiExpect} from 'chai';
 
 declare var expect: typeof chaiExpect;
 
-describe('intl-format-cache', function() {
+describe('@f-fjs/intl-format-cache', function() {
   it('has a function as the default export', function() {
     expect(memoizeFormatConstructor).to.be.a('function');
   });

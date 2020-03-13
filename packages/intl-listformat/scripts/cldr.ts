@@ -1,14 +1,14 @@
 import {
   extractAllListPatterns,
   getAllListLocales,
-} from 'formatjs-extract-cldr-data';
+} from '@f-fjs/extract-cldr-data';
 import {resolve, join} from 'path';
 import {outputFileSync} from 'fs-extra';
 import {
   ListPatternLocaleData,
   getAliasesByLang,
   getParentLocalesByLang,
-} from '@formatjs/intl-utils';
+} from '@f-fjs/intl-utils';
 
 const data = extractAllListPatterns();
 const langData = getAllListLocales().reduce(
