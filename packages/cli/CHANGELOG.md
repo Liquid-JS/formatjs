@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.24](https://github.com/formatjs/formatjs/compare/@f-fjs/cli@1.1.23...@f-fjs/cli@1.1.24) (2020-03-16)
+
+**Note:** Version bump only for package @f-fjs/cli
+
+
+
+
+
+
 ## 1.1.23 (2020-03-13)
 
 

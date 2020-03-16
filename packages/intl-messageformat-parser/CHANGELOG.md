@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/formatjs/formatjs/compare/@f-fjs/intl-messageformat-parser@4.1.1...@f-fjs/intl-messageformat-parser@4.1.2) (2020-03-16)
+
+
+### Bug Fixes
+
+* **@f-fjs/intl-messageformat-parser:** pretty print plural & select ([8e10431](https://github.com/formatjs/formatjs/commit/8e10431d88a24666607b0fe89521e411363299b6))
+
+
+
+
+
+
 ## 4.1.1 (2020-03-13)
 
 
