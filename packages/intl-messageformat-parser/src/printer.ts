@@ -120,9 +120,9 @@ function printSelectElement(el: SelectElement) {
     el.value,
     'select',
     Object.keys(el.options)
-      .map(id => `${id}{${doPrintAST(el.options[id].value, false)}}`)
+      .map(id => `${id} {${doPrintAST(el.options[id].value, false)}}`)
       .join(' '),
-  ].join(',');
+  ].join(', ');
   return `{${msg}}`;
 }
 
@@ -134,11 +134,11 @@ function printPluralElement(el: PluralElement) {
     [
       el.offset ? `offset:${el.offset}` : '',
       ...Object.keys(el.options).map(
-        id => `${id}{${doPrintAST(el.options[id].value, true)}}`
+        id => `${id} {${doPrintAST(el.options[id].value, true)}}`
       ),
     ]
       .filter(Boolean)
       .join(' '),
-  ].join(',');
+  ].join(', ');
   return `{${msg}}`;
 }
